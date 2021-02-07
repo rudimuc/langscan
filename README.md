@@ -10,10 +10,10 @@ I don't know by heart which movie has which audio language streams, but I would 
 
 ### Dependencies
 
-The script requires a small MKV library to scan for the audio properties
+The script requires a small MKV library to scan for the audio properties and a JSON Commandline Parser as well.
 
 ```sh
-$ apt-get install mkvtoolnix
+$ apt-get install mkvtoolnix jq
 ```
 
 ### Execution
