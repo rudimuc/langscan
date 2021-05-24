@@ -35,9 +35,10 @@ for i in **/*.mkv; do
     then
 
         filename=$(basename -- "$i")
-        echo $filename
-        ln -rsf "$i" "$3/$filename"
+        dirn=$(dirname -- "$i")
+        echo "Found file $filename in $dirn"
+        mkdir -p "$3/$dirn"
+        ln -rsf "$i" "$3/$dirn/$filename"
     fi
 done
-
 
